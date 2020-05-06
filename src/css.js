@@ -273,6 +273,7 @@ jQuery.extend( {
 		// want to modify the value if it is a CSS custom property
 		// since they are user-defined.
 		if ( !isCustomProp ) {
+			// 适配器，给所有不同浏览器的css属性增加不同的前缀
 			name = finalPropName( origName );
 		}
 
